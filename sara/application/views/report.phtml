@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang='es'>
+<head>
+<title>SARA</title>
+<meta charset='utf-8'>
+<link rel='stylesheet' href='<?php echo base_url()?>css/bootstrap.min.css'>
+<link rel="stylesheet" href="<?php echo base_url()?>css/jquery-ui.min.css">
+<link rel="stylesheet" href="<?php echo base_url()?>css/sara.css">
+
+<script src='<?php echo base_url()?>js/jquery.min.js'></script>
+<script src='<?php echo base_url()?>js/bootstrap.min.js'></script>
+<script src="<?php echo base_url()?>js/jquery-ui.min.js"></script>
+<script src="<?php echo base_url()?>js/highcharts.js"></script>
+<script src="<?php echo base_url()?>js/report.js"></script>
+
+</head>
+<body>	
+<div style="text-align:center;">
+	<h3>REPORTES</h3>
+	<button type="button" id="ocup_butt">Uso de aulas</button>
+	<button type="button" id="porc_butt">% de ocupación total de aulas</button>
+	<button type="button" id="aula_butt">Informe de eventos por aula</button>
+	<button type="button" id="user_butt">Informe de eventos por usuario</button>
+	<br>
+	<div id="container" style="width:100%; height:400px;"></div>
+	<br>
+
+
+
+	<button type="button" id="vol_butt">Volver</button>
+</div>
+
+
+<div id="ocup_dial" class="alertas" title="Seleccionar aula">
+	Aula : <input type="text" id="aula_ocup"><br>
+	<button type="button" id="aula_ocup_butt">Generar</button>
+</div>
+
+<div id="event_dial" class="alertas" title="Seleccionar mes">
+	<select id="mes">
+	    <option value="01">Enero</option>
+	    <option value="02">Febrero</option>
+	    <option value="03">Marzo</option>
+	    <option value="04">Abril</option>
+	    <option value="05">Mayo</option>
+	    <option value="06">Junio</option>
+	    <option value="07">Julio</option>
+	    <option value="08">Agosto</option>
+	    <option value="09">Septiembre</option>
+	    <option value="10">Octubre</option>
+	    <option value="11">Noviembre</option>
+	    <option value="12">Diciembre</option>
+	</select>
+	<button type="button" id="event_butt">Generar</button>
+</div>
+
+</body>
+</html>

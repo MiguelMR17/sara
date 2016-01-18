@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='es'>
+<head>
+<title>SARA</title>
+<meta charset='utf-8'>
+<link rel='stylesheet' href='<?php echo base_url()?>css/bootstrap.min.css'>
+<link rel="stylesheet" href="<?php echo base_url()?>css/jquery-ui.min.css">
+<link rel="stylesheet" href="<?php echo base_url()?>css/sara.css">
+
+<script src='<?php echo base_url()?>js/jquery.min.js'></script>
+<script src='<?php echo base_url()?>js/bootstrap.min.js'></script>
+<script src="<?php echo base_url()?>js/jquery-ui.min.js"></script>
+<script src="<?php echo base_url()?>js/equipos.js"></script>
+
+</head>
+<body>
+	<div style="text-align:center;">
+	<h3>EQUIPOS</h3>
+	<table class='table-bordered bg-info' id='piso1'style="margin: 0 auto;">
+		<tr><th>Codigo</th><th>Descripcion</th><th>Estado</th><th>Aula</th></tr>
+
+			<?php for($i=0;$i<sizeof($equipos);$i++):?>
+				<tr><td bgcolor="white" style='width:100px; height:40px'>
+					<?=$equipos[$i][0]?></td>
+					<td bgcolor="white" style='width:100px; height:40px'>
+					<?=$equipos[$i][1]?></td>
+					<td bgcolor="white" style='width:100px; height:40px'>
+					<?=$equipos[$i][2]?></td>
+					<td bgcolor="white" style='width:100px; height:40px'>
+					<?=$equipos[$i][3]?></td>
+					<td bgcolor="white" style='width:100px; height:40px'>
+						<button type="button" class="borrar" style='width:70px; height:25px' id="borr_<?=$equipos[$i][4]?>">borrar</button>
+					</td>	
+				</tr>
+			<?php endfor;?>						
+			</table>
+			<br>
+			<button type="button" id="new_butt" style='width:70px; height:25px'>Registrar</button>
+			<button type="button" id="vol_butt" style='width:70px; height:25px'>Volver</button>
+	</div>
+
+<div id="reg_dial" class="alertas" title="Registrar equipo">
+	Codigo:
+	<br><input type='text' name='Codigo' id='Codigo'><br>
+	Descripcion:
+	<br><input type='text' name='Descripcion'id='Descripcion'><br>
+	Estado:
+	<br><input type='text' name='Estado' id='Estado'><br>
+	Aula:
+	<br><input type='text' name='Aula' id='Aula'><br>
+
+	<br><button type="button" id="reg_butt">Registrar</button><br>
+</div>
+
+</body>
+</html>

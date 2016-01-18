@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang='es'>
+<head>
+<title>SARA</title>
+<meta charset='utf-8'>
+<link rel='stylesheet' href='<?php echo base_url()?>css/bootstrap.min.css'>
+<link rel="stylesheet" href="<?php echo base_url()?>css/jquery-ui.min.css">
+<link rel="stylesheet" href="<?php echo base_url()?>css/sara.css">
+
+<script src='<?php echo base_url()?>js/jquery.min.js'></script>
+<script src='<?php echo base_url()?>js/bootstrap.min.js'></script>
+<script src="<?php echo base_url()?>js/jquery-ui.min.js"></script>
+<script src="<?php echo base_url()?>js/users.js"></script>
+
+</head>
+<body>	
+	<div style="text-align:center;">
+	<h3>USUARIOS</h3>
+	<table class='table-bordered bg-info' id='piso1' style="margin: 0 auto;">
+		<tr><th>Nombre</th><th>Apellidos</th><th>Documento</th><th>Tipo</th></tr>
+
+			<?php for($i=0;$i<sizeof($users);$i++):?>
+				<tr><td bgcolor="white" style='width:100px; height:40px'>
+					<?=$users[$i][0]?></td>
+					<td bgcolor="white " style='width:100px; height:40px'>
+					<?=$users[$i][1]?></td>
+					<td bgcolor="white" style='width:100px; height:40px'>
+					<?=$users[$i][2]?></td>
+					<td bgcolor="white" style='width:100px; height:40px'>
+					<?=$users[$i][3]?></td>
+					<td bgcolor="white" style='width:100px; height:40px'>
+						<button type="button" class="borrar" style='width:70px; height:25px' id="borr_<?=$users[$i][4]?>">borrar</button>
+					</td>	
+				</tr>
+			<?php endfor;?>						
+			</table>
+			<br>
+			<button type="button" id="new_butt" style='width:70px; height:25px'>Registrar</button>
+			<button type="button" id="vol_butt" style='width:70px; height:25px'>Volver</button>
+	</div>
+
+
+<div id="reg_dial" class="alertas" title="Registrar usuario">
+	Nombre:
+	<br><input type='text' name='Nombre' id='Nombre'><br>
+	Apellidos:
+	<br><input type='text' name='Apellidos'id='Apellidos'><br>
+	Documento:
+	<br><input type='text' name='Documento' id='Documento'><br>
+	Tipo:
+	<select id='Tipo'>
+	<option value="1">Docente</option>
+	<option value="2">Monitor</option>
+	</select>
+
+	<br><button type="button" id="reg_butt">Registrar</button><br>
+</div>
+
+</body>
+</html>

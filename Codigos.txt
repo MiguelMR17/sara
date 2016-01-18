@@ -1,0 +1,29 @@
+Eventos
+
+0 Abierto por monitor
+1 Abierto por docente
+2 Error reserva
+3 Error huella-tip
+4 Ayuda monitor
+5 Abierto sin autorizacion
+6 Cierre
+7 Encendido luces con salon cerrado
+8 Encendido luces normal
+9 Apagado luces
+10 Encendido equipo con salon cerrado
+11 Encendido equipo normal
+12 Apagado equipo 
+13 Dejaron la puerta abierta
+14 Regla de los 15 minutos
+
+Usuarios
+
+1 Docente
+2 Monitor
+
+Estados
+
+2 Ocupado
+3 Alerta
+5 Ayuda
+7 Inhabilitado

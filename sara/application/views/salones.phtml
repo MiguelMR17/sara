@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang='es'>
+<head>
+<title>SARA</title>
+<meta charset='utf-8'>
+<link rel='stylesheet' href='<?php echo base_url()?>css/bootstrap.min.css'>
+<link rel="stylesheet" href="<?php echo base_url()?>css/jquery-ui.min.css">
+<link rel="stylesheet" href="<?php echo base_url()?>css/sara.css">
+
+<script src='<?php echo base_url()?>js/jquery.min.js'></script>
+<script src='<?php echo base_url()?>js/bootstrap.min.js'></script>
+<script src="<?php echo base_url()?>js/pusher.min.js"></script>
+<script src="<?php echo base_url()?>js/jquery-ui.min.js"></script>
+<script src="<?php echo base_url()?>js/sara.js"></script>
+
+</head>
+<body>	
+<br>
+<div style="text-align:center;">
+<h3>AULAS</h3>
+<br> 
+</div>
+<div class='row'>
+	<div class='col-md-3'></div>
+		<div id='floor1' class='col-md-3 tableros'>
+			<table class='table-bordered bg-info' id='piso1'  border="0">
+
+
+				<tr>				
+				<td  bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=101?>'><?=101?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=118?>'><?=118?></button></td>
+				</tr>
+				<tr>				
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=103?>'><?=103?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=102?>'><?=102?></button></td>
+				<td bgcolor="white" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=117?>'><?=117?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=116?>'><?=116?></button></td>
+				</tr>
+				<tr>				
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=105?>'><?=105?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=104?>'><?=104?></button></td>
+				<td bgcolor="white" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=115?>'><?=115?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=114?>'><?=114?></button></td>
+				</tr>
+				<tr>				
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=107?>'><?=107?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=106?>'><?=106?></button></td>
+				<td bgcolor="white" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=113?>'><?=113?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=112?>'><?=112?></button></td>
+				</tr>
+				<tr>				
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=109?>'><?=109?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=108?>'><?=108?></button></td>
+				<td bgcolor="white" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=111?>'><?=111?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=110?>'><?=110?></button></td>
+				</tr>
+				<td bgcolor="black" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'></td>
+
+				
+				
+			</table>
+		</div>
+		<div id='floor2' class='col-md-3 tableros'>
+			<table class='table-bordered bg-info' id='piso2'>
+				
+				<tr>				
+				<td  bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=201?>'><?=201?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=218?>'><?=218?></button></td>
+				</tr>
+				<tr>				
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=203?>'><?=203?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=202?>'><?=202?></button></td>
+				<td bgcolor="white" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=217?>'><?=217?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=216?>'><?=216?></button></td>
+				</tr>
+				<tr>				
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=205?>'><?=205?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=204?>'><?=204?></button></td>
+				<td bgcolor="white" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=215?>'><?=215?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=214?>'><?=214?></button></td>
+				</tr>
+				<tr>				
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=207?>'><?=207?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=206?>'><?=206?></button></td>
+				<td bgcolor="white" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=213?>'><?=213?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=212?>'><?=212?></button></td>
+				</tr>
+				<tr>				
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=209?>'><?=209?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=208?>'><?=208?></button></td>
+				<td bgcolor="white" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=211?>'><?=211?></button></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'><button class='libre_butt' data-toggle='tooltip' type='button' title="x" id='s<?=210?>'><?=210?></button></td>
+				</tr>
+				<td bgcolor="black" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="grey" style='width:40px; height:40px'></td>
+				<td bgcolor="black" style='width:40px; height:40px'></td>
+
+			</table>
+		</div>
+	<div class='col-md-3'></div>
+</div>
+	<br>
+	<div style="text-align:center;">
+	Día:
+	<input type="text" id="day">
+	Hora:
+ 	<select id="hora">
+    <option value="6">6:00</option>
+    <option value="8">8:00</option>
+    <option value="10">10:00</option>
+    <option value="12">12:00</option>
+    <option value="14">14:00</option>
+    <option value="16">16:00</option>
+    <option value="18">18:00</option>
+    <option value="20">20:00</option>
+  </select>
+  <button type="button" id="now_butt" style='width:70px; height:25px'>Ahora</button>
+  <br>
+  <br>
+
+<button type="button" id="users_butt" style='width:70px; height:25px'>Usuarios</button>
+<button type="button" id="equip_butt" style='width:70px; height:25px'>Equipos</button>
+<button type="button" id="repor_butt" style='width:70px; height:25px'>Reportes</button>
+<button type="button" id="logout_butt" style='width:70px; height:25px'>Salir</button>
+
+<br>
+<div id="res_dial" class="alertas" title="Reservar aula">
+	CC. : <input type="text" id="Cedula">
+	Curso: <input type="text" id="Curso">
+	<button type="button" id="res_butt">Reservar</button>
+	<br>Ó<br>
+	<button type="button" class="desh_butt">Inhabilitar</button>
+</div>
+
+<div id="lib_dial" class="alertas" title="Desreservar aula">
+	Desea cancelar la reserva del aula?<br>
+	<button type="button" id="lib_butt">Sí</button>
+	<br>Ó<br>
+	<button type="button" class="desh_butt">Inhabilitar</button>
+</div>
+
+<div id="ale_dial" class="alertas" title="Limpiar alerta">
+	La alerta ha sido atendida?<br>
+	<button type="button" id="ale_butt">Sí</button>
+</div>
+
+<div id="ayu_dial" class="alertas" title="Limpiar solicitud de ayuda">
+	La solicitud de personal operativo a sido atendida?<br>
+	<button type="button" id="ayu_butt">Sí</button>
+</div>
+
+<div id="reh_dial" class="alertas" title="Rehabilitar aula">
+	Volver a habilitar el aula?<br>
+	<button type="button" id="reh_butt">Sí</button>
+</div>
+
+<div id="inh_dial" class="alertas" title="Inhabilitar aula">
+	Realmente desea inhabilitar esta aula?<br>
+	<button type="button" id="inh_butt">Sí</button>
+</div>
+
+<div id="horario_dial" class="alertas" title="Error">
+	No es horario de trabajo.
+</div>
+
+<div id="reserva_dial" class="alertas" title="Reserva">
+	El aula se reservo correctamente.
+</div>
+
+</body>
+</html>
